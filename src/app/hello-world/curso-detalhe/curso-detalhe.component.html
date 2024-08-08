@@ -1,1 +1,9 @@
-<p>curso-detalhe works!</p>
+<div>
+  <p>Url do Portal {{ nomePortal }}</p> <!-- Cria o nome do portal de forma dinâmica; a lógica fica no componente TypeScript -->
+
+  <ul>
+    <li *ngFor="let curso of cursos"> <!-- Maneira de realizar iteração sobre arrays; o conteúdo de 'cursos' também vem do componente TypeScript -->
+      {{ curso }}
+    </li>
+  </ul>
+</div>
